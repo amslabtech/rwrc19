@@ -11,4 +11,4 @@ git clone https://github.com/amslabtech/rwrc19.git
 ```
 
 ## System
-- [Local Plan](/docs/local_plan.md)
+- [Navigation Mangaer](https://github.com/amslabtech/amsl_navigation_manager/blob/master/README.md)
