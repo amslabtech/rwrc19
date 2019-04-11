@@ -11,4 +11,4 @@ git clone https://github.com/amslabtech/rwrc19.git
 ```
 
 ## System
-- [Navigation Mangaer](https://github.com/amslabtech/amsl_navigation_manager/blob/master/README.md)
+- [Navigation Mangaer](https://github.com/amslabtech/amsl_navigation_managers/blob/master/amsl_navigation_managers/README.md)
