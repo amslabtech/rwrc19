@@ -8,7 +8,19 @@
 ## Installation
 ```
 git clone https://github.com/amslabtech/rwrc19.git
+git clone https://github.com/amslabtech/amsl_navigation_managers.git
+git clone https://github.com/amslabtech/dijkstra_global_planner
+cd ~/catkin_ws
+catkin_make
 ```
+## Requirements
+
+- Ubuntu16.04
+- ROS kinetic
+
 
 ## System
-- [Navigation Mangaer](https://github.com/amslabtech/amsl_navigation_managers/blob/master/amsl_navigation_managers/README.md)
+- [Local Plan](/docs/local_plan.md)
+- [Global Plan](/docs/global_plan.md)
+- [Localization](/docs/localization.md)
+- [Recognition](/docs/recognition.md)
