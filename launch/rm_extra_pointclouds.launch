@@ -14,7 +14,7 @@
 		<node pkg="human_detection" name="human_detection" type="test_human_detection_v2"/>
 		
 		<node pkg="rwrc14_remove_cluster_for_3dmap" name="human_detection" type="rwrc14_remove_cluster_for_3dmap">
-			<remap from="/perfect_velodyne" to="/velodyne_points" />
+			<remap from="/perfect_velodyne/normal" to="/velodyne_points" />
 		</node>
 	
 	<!-- remove points of ground from realsense data	 -->
