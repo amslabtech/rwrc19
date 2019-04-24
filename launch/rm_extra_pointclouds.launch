@@ -20,7 +20,7 @@
 	<!-- remove points of ground from realsense data	 -->
 	</group>
 		<include file="$(find velodyne_height_map)/launch/heightmap_nodelet.launch">
-			<remap from="depth_registered_pub/points" to="velodyne_points" />
+			<remap from="/camera/depth_registered_pub/points" to="velodyne_points" />
 			<remap from="velodyne_obstacles" to="/rm_ground/realsense" />
 		</include>
 	<group>
