@@ -35,7 +35,7 @@ $ sudo apt-get install ros-<distro>-urg-node
 topics of bag data
 - /velodyne_packets 
 - /imu/data
-- /tinypower/odom
+- /odom
 
 ```
 $ cd scripts
