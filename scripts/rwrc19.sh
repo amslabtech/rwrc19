@@ -35,11 +35,11 @@ sleep 1s
 
 ## navigator
 gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch node_edge_navigator node_edge_navigator.launch" --geometry=50x12+1000+750 &
-gnome-terminal -e "/opt/ros/${distro}/bin/rosrun node_edge_navigator local_goal_creator" --geometry=50x12+1500+0 &
+gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch node_edge_navigator local_goal_creator.launch" --geometry=50x12+1500+0 &
 
 ## local planner
 gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch state_lattice_planner local_planner.launch" --geometry=50x12+1500+250 &
-gnome-terminal -e "/opt/ros/${distro}/bin/rosrun motion_decision motion_decision" --geometry=50x12+1500+250 &
+gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch motion_decision motion_decision.launch" --geometry=50x12+1500+250 &
 
 ####rviz####
 gnome-terminal -e "/opt/ros/${distro}/bin/rosrun rviz rviz -d ${ros_ws}/src/amsl_navigation_managers/amsl_navigation_managers/config/node_edge_map.rviz" --geometry=50x12+1500+500
