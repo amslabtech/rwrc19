@@ -19,6 +19,7 @@
 |[state_lattice_planner](https://github.com/amslabtech/state_lattice_planner) |[![Build Status](https://travis-ci.org/amslabtech/state_lattice_planner.svg?branch=master)](https://travis-ci.org/amslabtech/state_lattice_planner) |
 |[making_localmap](https://github.com/amslabtech/making_localmap) |[![Build Status](https://travis-ci.org/amslabtech/making_localmap.svg?branch=master)](https://travis-ci.org/amslabtech/maiking_localmap) |
 |[intersection_recognition](https://github.com/amslabtech/intersection_recognition) |[![Build Status](https://travis-ci.org/amslabtech/intersection_recognition.svg?branch=master)](https://travis-ci.org/amslabtech/intersection_recognition) |
+|[motion_decision](https://github.com/amslabtech/motion_decision) |[![Build Status](https://travis-ci.org/amslabtech/motion_decision.svg?branch=master)](https://travis-ci.org/amslabtech/motion_decision)|
 
 - realsense_docker
 - velodyne_height_map 
@@ -39,7 +40,7 @@ topics of bag data
 
 ```
 $ cd scripts
-$ ./playing_bag.sh
+$ ./rwrc19.sh
 $ rosbag play --clock <test>.bag
 ```
 
