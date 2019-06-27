@@ -21,8 +21,9 @@
 |[intersection_recognition](https://github.com/amslabtech/intersection_recognition) |[![Build Status](https://travis-ci.org/amslabtech/intersection_recognition.svg?branch=master)](https://travis-ci.org/amslabtech/intersection_recognition) |
 |[motion_decision](https://github.com/amslabtech/motion_decision) |[![Build Status](https://travis-ci.org/amslabtech/motion_decision.svg?branch=master)](https://travis-ci.org/amslabtech/motion_decision)|
 
-- realsense_docker
-- velodyne_height_map 
+- [realsense_docker](https://github.com/amslabtech/realsense_docker)
+- [velodyne_height_map](https://github.com/amslabtech/velodyne_height_map)
+- [perfect_velodyne](https://github.com/amslabtech/perfect_velodyne)
 
 ### please install ros sensor package
 ```
@@ -40,7 +41,7 @@ topics of bag data
 
 ```
 $ cd scripts
-$ ./rwrc19.sh
+$ ./playing_bag.sh
 $ rosbag play --clock <test>.bag
 ```
 
