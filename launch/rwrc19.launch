@@ -3,10 +3,12 @@
 
     <!-- node edge map -->
     <include file="$(find amsl_navigation_managers)/launch/amsl_navigation_managers.launch">
-        <arg name="map_path" value="$(find amsl_navigation_managers)/sample/map/sample_map.yaml"/>
-		<arg name="checkpoint_path" value="$(find amsl_navigation_managers)/sample/checkpoint/sample_checkpoint.yaml"/>
+        <!-- <arg name="map_path" value="$(find amsl_navigation_managers)/sample/map/sample_map.yaml"/> -->
+		<!-- <arg name="checkpoint_path" value="$(find amsl_navigation_managers)/sample/checkpoint/sample_checkpoint.yaml"/> -->
         <!-- <arg name="map_path" value="$(find amsl_navigation_managers)/sample/map/sample_map3.yaml"/> -->
         <!-- <arg name="checkpoint_path" value="$(find amsl_navigation_managers)/sample/checkpoint/sample_checkpoint3.yaml"/> -->
+        <arg name="map_path" value="$(find amsl_navigation_managers)/sample/map/sample_map2.yaml"/>
+        <arg name="checkpoint_path" value="$(find amsl_navigation_managers)/sample/checkpoint/sample_checkpoint2.yaml"/>
     </include>
 
     <!-- sensor -->
@@ -19,9 +21,12 @@
 
     <!-- localization -->
     <include file="$(find node_edge_localizer)/launch/node_edge_localizer.launch">
-        <arg name="init_yaw" value="-3.14"/>
+        <arg name="init_yaw" value="3.14"/>
         <!-- <arg name="init_yaw" value="-1.57"/> -->
-        <arg name="enable_odom_tf" value="true"/>
+        <arg name="enable_odom_tf" value="false"/>
+        <arg name="init_node0_id" value="1"/>
+        <arg name="init_node1_id" value="2"/>
+		<arg name="init_progress" value="0"/>
         <arg name="enable_tf" value="true"/>
     </include>
 
@@ -38,6 +43,8 @@
     <!-- local planner -->
     <include file="$(find motion_planner_with_drl)/launch/local_planner.launch"/>
     <!-- <include file="$(find state_lattice_planner)/launch/local_planner.launch"/> -->
+
+    <include file="$(find stop_line_detector)/launch/stop_line_detector.launch"/>
 
     <!-- rviz -->
     <node pkg="rviz" type="rviz" name="global_rviz" args="-d $(find amsl_navigation_managers)/config/node_edge_map.rviz"/>

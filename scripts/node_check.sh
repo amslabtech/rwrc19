@@ -2,9 +2,16 @@
 SCRIPT=/home/amsl/rwrc19/scripts/
 
 str=(
+	"front_laser"
+	"joy_node"
+	"/local_planner/motion_decision"
+	"/rear_laser"
+	"/t_frog"
+	"/usb_cam"
+	"/xsens_driver"
 	"/NormalEstimationForVelodyne"
 	"/calc_shape_saveclouds"
-	"/complement_pub_tf'"
+	"/complement_pub_tf"
 	"/detect_peak_save_pc"
 	"/euclidean_cluster_distribution_filter"
 	"/global_planner/dijkstra"
@@ -13,6 +20,8 @@ str=(
 	"/intersection_matching"
 	"/local_goal_creator"
 	"/local_planner/state_lattice_planner"
+	"/mpdrl"
+	"/localmap2scan"
 	"/localiztion/node_edge_localizer"
 	"/making_localmap/downsample_and_transform"
 	"/making_localmap/hokuyo_localmap"
