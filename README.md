@@ -30,6 +30,7 @@
 $ sudo apt-get install ros-<distro>-velodyne
 $ sudo apt-get install ros-<distro>-xsens-driver
 $ sudo apt-get install ros-<distro>-urg-node
+$ sudo apt-get install ros-<distro>-velodyne-description
 ```
 
 ## How to use
