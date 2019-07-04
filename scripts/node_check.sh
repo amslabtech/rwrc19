@@ -45,33 +45,33 @@ str=(
 	"/velodyne_nodelet_manager_laserscan"
 )
 echo ${str[@]}
-rosnode list > "$SCRIPT"hoge.txt
+rosnode list > "$SCRIPT".hoge.txt
 
 trap break SIGINT
 
 while :
 do
 	#clear
-	rm "$SCRIPT"disp.sh
+	rm "$SCRIPT".disp.sh
 	for(( i=0;i<${#str[@]};i++))
 	do
 
-		grep -q "${str[i]}" "$SCRIPT"hoge.txt
+		grep -q "${str[i]}" "$SCRIPT".hoge.txt
 		ret=$?
 		if test ${ret} -eq 0
 		then
 			#echo -e "\e[32m ${str[i]} \e[m"
-			echo "echo -e \"\e[36m ${str[i]} \e[m\"" >> "$SCRIPT"disp.sh
+			echo "echo -e \"\e[36m ${str[i]} \e[m\"" >> "$SCRIPT".disp.sh
 		else
 			#echo -e "\e[31m ${str[i]} \e[m"
-			echo "echo -e \"\e[31m ${str[i]} \e[m\"" >> "$SCRIPT"disp.sh
+			echo "echo -e \"\e[31m ${str[i]} \e[m\"" >> "$SCRIPT".disp.sh
 		fi	
 	done
 	
 	clear
 
-	source "$SCRIPT"disp.sh
+	source "$SCRIPT".disp.sh
 	
-	rosnode list > "$SCRIPT"hoge.txt
+	rosnode list > "$SCRIPT".hoge.txt
 	sleep 0.1s
 done
