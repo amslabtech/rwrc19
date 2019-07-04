@@ -1,18 +1,18 @@
 #!/bin/bash
 
+source ${HOME}/.bashrc
+
 distro=$ROS_DISTRO
 ros_ws=$ROS_WORKSPACE
 
 source /opt/ros/${distro}/setup.bash
 source ${ros_ws}/devel/setup.bash
 
-source ${HOME}/.bashrc
-
 gnome-terminal -e "/opt/ros/${distro}/bin/roscore" --geometry=50x12+0+0 &
 sleep 3s
 
 ## node edge map
-gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch amsl_navigation_managers amsl_navigation_managers.launch map_path:=${ros_ws}/src/amsl_navigation_managers/amsl_navigation_managers/sample/map/sample_map.yaml checkpoint_path:=${ros_ws}/src/amsl_navigation_managers/amsl_navigation_managers/sample/checkpoint/sample_checkpoint.yaml --screen" --geometry=50x12+0+250 &
+gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch amsl_navigation_managers amsl_navigation_managers.launch map_path:=${HOME}/rwrc19/map/tsukuba.yaml checkpoint_path:=${HOME}/rwrc19/checkpoint/tsukuba.yaml --screen" --geometry=50x12+0+250 &
 sleep 1s
 
 ## sensor

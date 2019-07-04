@@ -12,7 +12,7 @@ sleep 3s
 gnome-terminal -e "/opt/ros/${distro}/bin/rosparam set use_sim_time true" --geometry=50x12+0+0 &
 
 ## node edge map
-gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch amsl_navigation_managers amsl_navigation_managers.launch map_path:=${ros_ws}/src/amsl_navigation_managers/amsl_navigation_managers/sample/map/sample_map2.yaml checkpoint_path:=${ros_ws}/src/amsl_navigation_managers/amsl_navigation_managers/sample/checkpoint/sample_checkpoint2.yaml --screen" --geometry=50x12+0+250 &
+gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch amsl_navigation_managers amsl_navigation_managers.launch map_path:=${HOME}/map/tsukuba.yaml checkpoint_path:=${HOME}/rwrc19/checkpoint/tsukuba.yaml --screen" --geometry=50x12+0+250 &
 
 ## sensor
 gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch velodyne_pointcloud 32e_points.launch" --geometry=50x12+500+0 &
