@@ -1,9 +1,9 @@
 #!/bin/bash
-SCRIPT=/home/amsl/rwrc19/scripts/
+SCRIPT=${HOME}/rwrc19/scripts/
 
 str=(
-	"front_laser"
-	"joy_node"
+	"/front_laser"
+	"/joy_node"
 	"/local_planner/motion_decision"
 	"/rear_laser"
 	"/t_frog"
