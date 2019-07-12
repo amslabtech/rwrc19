@@ -19,17 +19,18 @@ then
 	checkpoint="ikuta.yaml"
 	init_node0="0"
 	init_node1="1"
-	init_yaw="-3.14"
+	init_yaw="-1.57"
 elif [ "x$1" = "xd_kan" ];
 then
 	map="d_kan.yaml"
 	checkpoint="d_kan.yaml"
 	init_node0="0"
 	init_node1="1"
-	init_yaw="-1.57"
+	init_yaw="-3.14"
+else
+	echo "you should choose any of [tsukuba, ikuta, d_kan]"
+	exit 1
 fi
-
-echo ${map}
 
 source ${HOME}/.bashrc
 
