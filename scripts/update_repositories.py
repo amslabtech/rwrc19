@@ -12,12 +12,12 @@ if __name__=='__main__':
 
     ws_name = os.environ['ROS_PACKAGE_PATH']
     ws_names = ws_name.split(':')
-    dir_names = [ws_name for ws_name in ws_names if 'ws' in ws_name ]
+    dir_names = [ws_name for ws_name in ws_names if 'src' in ws_name ]
 
     if len(dir_names) > 1:
         print 'warning: Multple ROS workspaces are detected. ' + dir_name[0] + ' will be used'
     elif len(dir_names) == 0:
-        print 'error: no ROS workspaces that contain "ws" in dirname are detected'
+        print 'Error: dirname ending with "src" cannot be found in ROS_PACKAGE_PATH .'
         exit(-1)
 
     dir_name = dir_names[0]
