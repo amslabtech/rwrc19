@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <launch>
 
     <param name="use_sim_time" value="true"/>
@@ -36,9 +37,9 @@
     <include file="$(find node_edge_navigator)/launch/local_goal_creator.launch"/>
 
     ## local planner
-    <include file="$(find state_lattice_planner)/launch/local_planner.launch"/>
+    <!-- <include file="$(find state_lattice_planner)/launch/local_planner.launch"/> -->
 
     ####rviz####
-    <!--node pkg="rviz" type="rviz" name="global_rviz" args="-d $(find amsl_navigation_managers)/config/node_edge_map.rviz"/-->
+    <node pkg="rviz" type="rviz" name="global_rviz" args="-d $(find amsl_navigation_managers)/config/node_edge_map.rviz"/>
     <node pkg="rviz" type="rviz" name="local_rviz" args="-d $(find making_local_map)/config/node_edge_map.rviz"/>
 </launch>

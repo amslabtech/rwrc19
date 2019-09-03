@@ -20,15 +20,15 @@
     <include file="$(find dijkstra_global_planner)/launch/global_planner.launch"/>
 
     <!-- localization -->
-    <include file="$(find node_edge_localizer)/launch/node_edge_localizer.launch">
-        <arg name="init_yaw" value="3.14"/>
-        <!-- <arg name="init_yaw" value="-1.57"/> -->
-        <arg name="enable_odom_tf" value="false"/>
-        <arg name="init_node0_id" value="1"/>
-        <arg name="init_node1_id" value="2"/>
-		<arg name="init_progress" value="0"/>
-        <arg name="enable_tf" value="true"/>
-    </include>
+    <!-- <include file="$(find node_edge_localizer)/launch/node_edge_localizer.launch"> -->
+    <!--     <arg name="init_yaw" value="3.14"/> -->
+    <!--     <!&#45;&#45; <arg name="init_yaw" value="&#45;1.57"/> &#45;&#45;> -->
+    <!--     <arg name="enable_odom_tf" value="false"/> -->
+    <!--     <arg name="init_node0_id" value="1"/> -->
+    <!--     <arg name="init_node1_id" value="2"/> -->
+	<!-- 	<arg name="init_progress" value="0"/> -->
+    <!--     <arg name="enable_tf" value="true"/> -->
+    <!-- </include> -->
 
     <!-- localmap -->
     <include file="$(find making_local_map)/launch/making_localmap.launch"/>
@@ -41,7 +41,7 @@
     <include file="$(find node_edge_navigator)/launch/local_goal_creator.launch"/>
 
     <!-- local planner -->
-    <include file="$(find motion_planner_with_drl)/launch/local_planner.launch"/>
+    <!-- <include file="$(find motion_planner_with_drl)/launch/local_planner.launch"/> -->
     <!-- <include file="$(find state_lattice_planner)/launch/local_planner.launch"/> -->
 
     <include file="$(find stop_line_detector)/launch/stop_line_detector.launch"/>
