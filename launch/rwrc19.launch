@@ -3,46 +3,47 @@
 
     <!-- node edge map -->
     <include file="$(find amsl_navigation_managers)/launch/amsl_navigation_managers.launch">
-        <!-- <arg name="map_path" value="$(find amsl_navigation_managers)/sample/map/sample_map.yaml"/> -->
-		<!-- <arg name="checkpoint_path" value="$(find amsl_navigation_managers)/sample/checkpoint/sample_checkpoint.yaml"/> -->
-        <!-- <arg name="map_path" value="$(find amsl_navigation_managers)/sample/map/sample_map3.yaml"/> -->
-        <!-- <arg name="checkpoint_path" value="$(find amsl_navigation_managers)/sample/checkpoint/sample_checkpoint3.yaml"/> -->
-        <arg name="map_path" value="$(find amsl_navigation_managers)/sample/map/sample_map2.yaml"/>
-        <arg name="checkpoint_path" value="$(find amsl_navigation_managers)/sample/checkpoint/sample_checkpoint2.yaml"/>
+        <arg name="map_path" value="$(find amsl_navigation_managers)/sample/map/sample_map.yaml"/>
+        <arg name="checkpoint_path" value="$(find amsl_navigation_managers)/sample/checkpoint/sample_checkpoint.yaml"/>
     </include>
 
     <!-- sensor -->
     <node pkg="complement" type="complement" name="complement"/>
-    <include file="$(find perfect_velodyne)/launch/normal_estimation.launch"/>
+    <!-- <include file="$(find perfect_velodyne)/launch/normal_estimation.launch"/> -->
+    <include file="$(find velodyne_pointcloud)/launch/32e_points.launch"/>
     <include file="$(find velodyne_height_map)/launch/amsl_velodyne_heightmap.launch"/>
+    <include file="$(find dynamic_cloud_detector)/launch/dynamic_cloud_detector.launch"/>
 
     <!-- global planner -->
     <include file="$(find dijkstra_global_planner)/launch/global_planner.launch"/>
 
     <!-- localization -->
-    <!-- <include file="$(find node_edge_localizer)/launch/node_edge_localizer.launch"> -->
-    <!--     <arg name="init_yaw" value="3.14"/> -->
-    <!--     <!&#45;&#45; <arg name="init_yaw" value="&#45;1.57"/> &#45;&#45;> -->
-    <!--     <arg name="enable_odom_tf" value="false"/> -->
-    <!--     <arg name="init_node0_id" value="1"/> -->
-    <!--     <arg name="init_node1_id" value="2"/> -->
-	<!-- 	<arg name="init_progress" value="0"/> -->
-    <!--     <arg name="enable_tf" value="true"/> -->
-    <!-- </include> -->
+    <include file="$(find node_edge_localizer)/launch/node_edge_localizer.launch">
+        <arg name="init_yaw" value="3.14"/>
+        <arg name="enable_odom_tf" value="false"/>
+        <arg name="init_node0_id" value="0"/>
+        <arg name="init_node1_id" value="1"/>
+        <arg name="init_progress" value="0"/>
+        <arg name="enable_tf" value="true"/>
+    </include>
 
     <!-- localmap -->
     <include file="$(find making_local_map)/launch/making_localmap.launch"/>
 
     <!-- intersection recognition -->
-    <include file="$(find intersection_recognition)/launch/intersection_recognition.launch"/>
+    <!-- <include file="$(find intersection_recognition)/launch/intersection_recognition.launch"/> -->
+    <include file="$(find road_recognizer)/launch/road_recognizer.launch"/>
 
     <!-- navigator -->
-    <include file="$(find node_edge_navigator)/launch/node_edge_navigator.launch"/>
+    <include file="$(find node_edge_navigator)/launch/node_edge_navigator.launch">
+        <arg name="goal_radius" value="1.0"/>
+    </include>
     <include file="$(find node_edge_navigator)/launch/local_goal_creator.launch"/>
 
     <!-- local planner -->
     <!-- <include file="$(find motion_planner_with_drl)/launch/local_planner.launch"/> -->
-    <!-- <include file="$(find state_lattice_planner)/launch/local_planner.launch"/> -->
+    <include file="$(find state_lattice_planner)/launch/local_planner.launch"/>
+    <include file="$(find motion_decision)/launch/motion_decision.launch"/>
 
     <include file="$(find stop_line_detector)/launch/stop_line_detector.launch"/>
 
