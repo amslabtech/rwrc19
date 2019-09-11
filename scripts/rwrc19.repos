@@ -47,3 +47,7 @@ repositories:
         type: git
         url: https://github.com/amslabtech/CATS.git
         version: master
+    amslabtech/odom_gnss_ekf:
+        type: git
+        url: https://github.com/amslabtech/odom_gnss_ekf.git
+        version: master

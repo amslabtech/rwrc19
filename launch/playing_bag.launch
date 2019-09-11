@@ -5,8 +5,8 @@
 
     ## node edge map
     <include file="$(find amsl_navigation_managers)/launch/amsl_navigation_managers.launch">
-        <arg name="map_path" value="$(find amsl_navigation_managers)/sample/map/sample_map3.yaml"/>
-        <arg name="checkpoint_path" value="$(find amsl_navigation_managers)/sample/checkpoint/sample_checkpoint3.yaml"/>
+        <arg name="map_path" value="$(find amsl_navigation_managers)/sample/map/sample_map2.yaml"/>
+        <arg name="checkpoint_path" value="$(find amsl_navigation_managers)/sample/checkpoint/sample_checkpoint2.yaml"/>
     </include>
 
     ## sensor
@@ -41,5 +41,5 @@
 
     ####rviz####
     <node pkg="rviz" type="rviz" name="global_rviz" args="-d $(find amsl_navigation_managers)/config/node_edge_map.rviz"/>
-    <node pkg="rviz" type="rviz" name="local_rviz" args="-d $(find making_local_map)/config/node_edge_map.rviz"/>
+    <node pkg="rviz" type="rviz" name="local_rviz" args="-d $(find making_local_map)/config/localmap.rviz"/>
 </launch>
