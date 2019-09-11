@@ -11,9 +11,9 @@ TIME=$(date +%Y-%m-%d-%H-%M-%S)
 LOCALI="/imu/data /odom"
 VELODYNE="/velodyne_packets"
 CAMERA="/usb_cam/image_raw/compressed"
-REALSENSE="/camera/color/image_raw/compressed /camera/depth/image_rect_raw/compressed /camera/depth/camera_info /camera/color/camera_info"
+REALSENSE="/camera/color/image_raw/compressed /camera/depth/image_rect_raw/compressedDepth /camera/depth/camera_info /camera/color/camera_info"
 LIDAR="/front_laser/scan /rear_laser/scan"
-GPS="/fix /gps/odom /vel /nmea_sentence /time_reference"
+GPS="/fix /nmea_sentence /time_reference"
 
 
 echo $LOCALI &
