@@ -13,6 +13,7 @@
     <include file="$(find velodyne_pointcloud)/launch/32e_points.launch"/>
     <include file="$(find velodyne_height_map)/launch/amsl_velodyne_heightmap.launch"/>
     <include file="$(find dynamic_cloud_detector)/launch/dynamic_cloud_detector.launch"/>
+    <include file="$(find road_recognizer)/launch/road_recognizer.launch"/>
 
     <!-- global planner -->
     <include file="$(find dijkstra_global_planner)/launch/global_planner.launch"/>
