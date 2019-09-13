@@ -55,3 +55,7 @@ repositories:
         type: git
         url: https://github.com/amslabtech/dynamic_cloud_detector.git
         version: master
+    amslabtech/motion_decision:
+        type: git
+        url: https://github.com/amslabtech/motion_decision.git
+        version: master
