@@ -7,8 +7,12 @@
         <arg name="checkpoint_path" value="$(find amsl_navigation_managers)/sample/checkpoint/sample_checkpoint.yaml"/>
     </include>
 
+    <include file="$(find cats)/launch/robot_state.launch"/>
+
     <!-- sensor -->
-    <node pkg="complement" type="complement" name="complement"/>
+    <node pkg="complement" type="complement" name="complement">
+        <param name="dyaw/drift" value="0.000"/>
+    </node>
     <!-- <include file="$(find perfect_velodyne)/launch/normal_estimation.launch"/> -->
     <include file="$(find velodyne_pointcloud)/launch/32e_points.launch"/>
     <include file="$(find velodyne_height_map)/launch/amsl_velodyne_heightmap.launch"/>
@@ -36,13 +40,13 @@
 
     <!-- navigator -->
     <include file="$(find node_edge_navigator)/launch/node_edge_navigator.launch">
-        <arg name="goal_radius" value="1.0"/>
+        <arg name="goal_radius" value="2.0"/>
     </include>
 
     <!-- local planner -->
     <!-- <include file="$(find motion_planner_with_drl)/launch/local_planner.launch"/> -->
     <include file="$(find state_lattice_planner)/launch/local_planner.launch"/>
-    <include file="$(find motion_decision)/launch/motion_decision.launch"/>
+    <!-- <include file="$(find motion_decision)/launch/motion_decision.launch"/> -->
 
     <include file="$(find stop_line_detector)/launch/stop_line_detector.launch"/>
 
