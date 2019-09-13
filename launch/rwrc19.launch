@@ -20,11 +20,11 @@
     <!-- localization -->
     <include file="$(find node_edge_localizer)/launch/node_edge_localizer.launch">
         <arg name="init_yaw" value="3.14"/>
-        <arg name="enable_odom_tf" value="false"/>
         <arg name="init_node0_id" value="0"/>
         <arg name="init_node1_id" value="1"/>
         <arg name="init_progress" value="0"/>
         <arg name="enable_tf" value="true"/>
+        <arg name="enable_odom_tf" value="true"/>
     </include>
 
     <!-- localmap -->
