@@ -66,7 +66,6 @@ sleep 1s
 
 ## navigator
 gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch node_edge_navigator node_edge_navigator.launch --screen" --geometry=50x12+1000+750 &
-gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch node_edge_navigator local_goal_creator.launch --screen" --geometry=50x12+1500+0 &
 
 ## local planner
 gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch motion_planner_with_drl local_planner.launch --screen" --geometry=50x12+1500+250 &

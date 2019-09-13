@@ -38,7 +38,6 @@
     <include file="$(find node_edge_navigator)/launch/node_edge_navigator.launch">
         <arg name="goal_radius" value="1.0"/>
     </include>
-    <include file="$(find node_edge_navigator)/launch/local_goal_creator.launch"/>
 
     <!-- local planner -->
     <!-- <include file="$(find motion_planner_with_drl)/launch/local_planner.launch"/> -->

@@ -38,7 +38,6 @@
 
     ## navigator
     <include file="$(find node_edge_navigator)/launch/node_edge_navigator.launch"/>
-    <include file="$(find node_edge_navigator)/launch/local_goal_creator.launch"/>
 
     ## local planner
     <!-- <include file="$(find state_lattice_planner)/launch/local_planner.launch"/> -->

@@ -60,7 +60,7 @@ gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch dijkstra_global_planner glob
 ## localization
 gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch node_edge_localizer node_edge_localizer.launch --screen init_node0_id:=${init_node0} init_node1_id:=${init_node1} init_yaw:=${init_yaw} enable_tf:=true enable_odom_tf:=true" --geometry=50x12+1000+250 &
 
-## localmap 
+## localmap
 gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch making_local_map making_localmap.launch" --geometry=50x12+1000+500 &
 
 ## intersection recognition
@@ -69,7 +69,6 @@ gnome-terminal -e "${ros_ws}/src/intersection_recognition/scripts/restart.sh ros
 
 ## navigator
 gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch node_edge_navigator node_edge_navigator.launch --screen" --geometry=50x12+1000+750 &
-gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch node_edge_navigator local_goal_creator.launch --screen" --geometry=50x12+1500+0 &
 
 # ## local planner
 gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch state_lattice_planner local_planner.launch --screen" --geometry=50x12+1500+250 &
