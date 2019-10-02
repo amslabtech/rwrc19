@@ -13,7 +13,7 @@
     <node pkg="complement" type="complement" name="complement">
         <param name="dyaw/drift" value="0.000"/>
     </node>
-    <!-- <include file="$(find perfect_velodyne)/launch/normal_estimation.launch"/> -->
+    <include file="$(find perfect_velodyne)/launch/normal_estimation.launch"/>
     <include file="$(find velodyne_pointcloud)/launch/32e_points.launch"/>
     <include file="$(find velodyne_height_map)/launch/amsl_velodyne_heightmap.launch"/>
     <include file="$(find dynamic_cloud_detector)/launch/dynamic_cloud_detector.launch"/>
@@ -34,8 +34,6 @@
     <!-- localmap -->
     <include file="$(find making_local_map)/launch/making_localmap.launch"/>
 
-    <!-- intersection recognition -->
-    <!-- <include file="$(find intersection_recognition)/launch/intersection_recognition.launch"/> -->
     <include file="$(find road_recognizer)/launch/road_recognizer.launch"/>
 
     <!-- navigator -->
