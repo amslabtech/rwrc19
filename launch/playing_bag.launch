@@ -14,7 +14,9 @@
     <node pkg="complement" type="complement" name="complement"/>
     <include file="$(find cats)/launch/robot_state.launch"/>
     <include file="$(find perfect_velodyne)/launch/normal_estimation.launch"/>
-    <include file="$(find velodyne_height_map)/launch/amsl_velodyne_heightmap.launch"/>
+    <include file="$(find velodyne_height_map)/launch/amsl_velodyne_heightmap.launch">
+        <arg name="input_topic" value="/perfect_velodyne/normal"/>
+    </include>
     <include file="$(find dynamic_cloud_detector)/launch/dynamic_cloud_detector.launch"/>
     <include file="$(find road_recognizer)/launch/road_recognizer.launch"/>
 
