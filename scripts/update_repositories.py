@@ -22,7 +22,7 @@ if __name__=='__main__':
         print('Error: dirname ending with "src" cannot be found in ROS_PACKAGE_PATH .')
         exit(-1)
 
-    docker_dir = os.path.join(os.environ["HOME"],"rwrc19_docker")
+    docker_dir = os.path.join(os.environ["HOME"],"docker")
     if not os.path.exists(docker_dir):
         os.mkdir(docker_dir)
     dir_name = {'ros-pkg' : dir_names[0],
