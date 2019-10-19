@@ -1,65 +1,96 @@
 repositories:
     amslabtech/amsl_navigation_managers:
         type: git
+        label: ros-pkg
         url: https://github.com/amslabtech/amsl_navigation_managers.git
         version: master
     amslabtech/making_localmap:
         type: git
+        label: ros-pkg
         url: https://github.com/amslabtech/making_localmap.git
         version: master
     amslabtech/state_lattice_planner:
         type: git
+        label: ros-pkg
         url: https://github.com/amslabtech/state_lattice_planner.git
         version: master
     amslabtech/complement:
         type: git
+        label: ros-pkg
         url: https://github.com/amslabtech/complement.git
         version: master
     amslabtech/node_edge_localizer:
         type: git
+        label: ros-pkg
         url: https://github.com/amslabtech/node_edge_localizer.git
         version: master
     amslabtech/node_edge_navigator:
         type: git
+        label: ros-pkg
         url: https://github.com/amslabtech/node_edge_navigator.git
         version: master
     amslabtech/dijkstra_global_planner:
         type: git
+        label: ros-pkg
         url: https://github.com/amslabtech/dijkstra_global_planner.git
         version: master
     amslabtech/road_recognizer:
         type: git
+        label: ros-pkg
         url: https://github.com/amslabtech/road_recognizer.git
         version: master
     amslabtech/dynamic_cloud_detector:
         type: git
+        label: ros-pkg
         url: https://github.com/amslabtech/dynamic_cloud_detector.git
         version: master
     amslabtech/velodyne_height_map:
         type: git
+        label: ros-pkg
         url: https://github.com/amslabtech/velodyne_height_map.git
         version: master
     amslabtech/stop_line_detector:
         type: git
+        label: ros-pkg
         url: https://github.com/amslabtech/stop_line_detector.git
         version: master
     amslabtech/CATS:
         type: git
+        label: ros-pkg
         url: https://github.com/amslabtech/CATS.git
         version: master
     amslabtech/odom_gnss_ekf:
         type: git
+        label: ros-pkg
         url: https://github.com/amslabtech/odom_gnss_ekf.git
         version: master
     amslabtech/dynamic_cloud_detector:
         type: git
+        label: ros-pkg
         url: https://github.com/amslabtech/dynamic_cloud_detector.git
         version: master
     amslabtech/motion_decision:
         type: git
+        label: ros-pkg
         url: https://github.com/amslabtech/motion_decision.git
         version: master
     amslabtech/perfect_velodyne:
         type: git
+        label: ros-pkg
         url: https://github.com/amslabtech/perfect_velodyne.git
+        version: master
+    amslabtech/gps_docker:
+        type: git
+        label: docker
+        url: https://github.com/amslabtech/gps_docker.git
+        version: master
+    amslabtech/realsense_docker:
+        type: git
+        label: docker
+        url: https://github.com/amslabtech/realsense_docker.git
+        version: master
+    amslabtech/mpdrl_ros:
+        type: git
+        label: docker
+        url: https://github.com/amslabtech/mpdrl_ros.git
         version: master

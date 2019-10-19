@@ -22,13 +22,17 @@ if __name__=='__main__':
         print('Error: dirname ending with "src" cannot be found in ROS_PACKAGE_PATH .')
         exit(-1)
 
-    dir_name = dir_names[0]
+    docker_dir = os.path.join(os.environ["HOME"],"rwrc19_docker")
+    if not os.path.exists(docker_dir):
+        os.mkdir(docker_dir)
+    dir_name = {'ros-pkg' : dir_names[0],
+                'docker'  : docker_dir}
 
     for repository_name in repos['repositories']:
         repository = repos['repositories'][repository_name]
         print(repository)
         if repository['type'] == 'git':
-            repo_dir_name = dir_name + '/' + os.path.basename('./' + repository_name)
+            repo_dir_name = dir_name[repository['label']] + '/' + os.path.basename('./' + repository_name)
             if not os.path.exists(repo_dir_name):
                 print('git', 'clone', '-b', repository['version'], repository['url'], '--depth', '1', repo_dir_name)
                 try:
@@ -41,7 +45,7 @@ if __name__=='__main__':
                 try:
                     os.chdir(repo_dir_name)
                     result = subprocess.check_output(['git', 'pull', 'origin', repository['version']])
-                    os.chdir(dir_name)
+                    os.chdir(dir_name[repository['label']])
                 except subprocess.CalledProcessError as e:
                     print(e)
                     exit(-1)
