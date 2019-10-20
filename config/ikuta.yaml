@@ -5,4 +5,5 @@ localiztion:
         INIT_NODE1_ID: 1 
         INIT_PROGRESS: 0
         ENABLE_TF: true
-        ENABLE_ODOM_TF: true
+        ENABLE_ODOM_TF: false
+        USE_OBSERVED_POSITION_AS_ESTIMATED_POSE: true
