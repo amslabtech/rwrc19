@@ -10,11 +10,9 @@
         <arg name="checkpoint_path" value="$(env HOME)/rwrc19/checkpoint/$(arg env).yaml"/>
     </include>
 
-    <include file="$(find cats)/launch/robot_state.launch"/>
-
     <!-- sensor -->
     <node pkg="complement" type="complement" name="complement">
-        <param name="dyaw/drift" value="0.000"/>
+        <param name="dyaw/drift" value="0.0015"/>
     </node>
     <include file="$(find perfect_velodyne)/launch/normal_estimation.launch"/>
     <include file="$(find velodyne_pointcloud)/launch/32e_points.launch"/>
