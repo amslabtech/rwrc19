@@ -1,0 +1,8 @@
+localiztion:
+    node_edge_localizer:
+        INIT_YAW: 3.14
+        INIT_NODE0_ID: 1
+        INIT_NODE1_ID: 2 
+        INIT_PROGRESS: 0
+        ENABLE_TF: true
+        ENABLE_ODOM_TF: true
