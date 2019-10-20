@@ -2,6 +2,7 @@
 <launch>
 
     <arg name="env" default="tsukuba"/>
+    <arg name="gps" default="false"/>
 
     <!-- node edge map -->
     <include file="$(find amsl_navigation_managers)/launch/amsl_navigation_managers.launch">
@@ -28,7 +29,14 @@
     <!-- localization -->
     <include file="$(find node_edge_localizer)/launch/node_edge_localizer.launch"/>
     <rosparam command="load" file="$(env HOME)/rwrc19/config/$(arg env).yaml" />
+    <node pkg="odom_gnss_ekf" type="odom_gnss_ekf" name="odom_gnss_ekf" if="$(arg gps)">
+        <param name="INIT_X" value="-18.7192398099578"/>
+        <param name="INIT_Y" value="1.065049359574914"/>
+        <param name="INIT_YAW" value="3.14"/>
+        <remap from="/odom/gnss_ekf" to="/observed_position"/>
+    </node>
 
+    
     <!-- localmap -->
     <include file="$(find making_local_map)/launch/making_localmap.launch"/>
 
