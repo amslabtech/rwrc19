@@ -6,7 +6,8 @@ EDGE:
 - node_id: [3, 58]
 - node_id: [4, 5]
 - node_id: [4, 59]
-- node_id: [5, 6]
+- node_id: [6, 79]
+- node_id: [5, 79]
 - node_id: [6, 7]
 - node_id: [6, 60]
 - node_id: [7, 2]
@@ -422,5 +423,9 @@ NODE:
 - id: 78
   label: ''
   point: {x: 411.22418723691953, y: -96.51843436900526}
+  type: intersection
+- id: 79
+  label: ''
+  point: {x: -92.75796460203128, y: 27.171443366911262}
   type: intersection
 ORIGIN_UTM: {x: 416913.89696460206, y: 3993535.879556633}
