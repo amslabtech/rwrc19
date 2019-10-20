@@ -93,4 +93,4 @@ repositories:
         type: git
         label: docker
         url: https://github.com/amslabtech/mpdrl_ros.git
-        version: master
+        version: rwrc
