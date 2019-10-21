@@ -6,8 +6,8 @@
 
     <!-- node edge map -->
     <include file="$(find amsl_navigation_managers)/launch/amsl_navigation_managers.launch">
-        <arg name="map_path" value="$(env HOME)/rwrc19/map/$(arg env).yaml"/>
-        <arg name="checkpoint_path" value="$(env HOME)/rwrc19/checkpoint/$(arg env).yaml"/>
+        <arg name="map_path" value="$(env HOME)/rwrc19/map/$(arg env)_map.yaml"/>
+        <arg name="checkpoint_path" value="$(env HOME)/rwrc19/checkpoint/$(arg env)_checkpoint.yaml"/>
     </include>
 
     <!-- sensor -->
@@ -25,7 +25,7 @@
 
     <!-- localization -->
     <include file="$(find node_edge_localizer)/launch/node_edge_localizer.launch"/>
-    <rosparam command="load" file="$(env HOME)/rwrc19/config/$(arg env).yaml" />
+    <rosparam command="load" file="$(env HOME)/rwrc19/config/$(arg env)_config.yaml" />
     <node pkg="odom_gnss_ekf" type="odom_gnss_ekf" name="odom_gnss_ekf" if="$(arg gps)">
         <param name="INIT_X" value="-18.7192398099578"/>
         <param name="INIT_Y" value="1.065049359574914"/>
