@@ -64,11 +64,6 @@ repositories:
         label: ros-pkg
         url: https://github.com/amslabtech/odom_gnss_ekf.git
         version: master
-    amslabtech/dynamic_cloud_detector:
-        type: git
-        label: ros-pkg
-        url: https://github.com/amslabtech/dynamic_cloud_detector.git
-        version: master
     amslabtech/motion_decision:
         type: git
         label: ros-pkg
