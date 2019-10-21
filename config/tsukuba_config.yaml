@@ -6,4 +6,4 @@ localiztion:
         INIT_PROGRESS: 0.9
         ENABLE_TF: true
         ENABLE_ODOM_TF: false
-        USE_OBSERVED_POSITION_AS_ESTIMATED_POSE: true
+        USE_OBSERVED_POSITION_AS_ESTIMATED_POSE: true 
