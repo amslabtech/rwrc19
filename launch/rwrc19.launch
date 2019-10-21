@@ -15,7 +15,6 @@
         <param name="dyaw/drift" value="0.0015"/>
     </node>
     <include file="$(find perfect_velodyne)/launch/normal_estimation.launch"/>
-    <include file="$(find velodyne_pointcloud)/launch/32e_points.launch"/>
     <include file="$(find velodyne_height_map)/launch/amsl_velodyne_heightmap.launch">
         <arg name="input_topic" value="/perfect_velodyne/normal"/>
     </include>
@@ -42,11 +41,13 @@
 
     <!-- navigator -->
     <include file="$(find node_edge_navigator)/launch/node_edge_navigator.launch">
-        <arg name="goal_radius" value="1.0"/>
+        <arg name="goal_radius" value="2.0"/>
     </include>
 
     <!-- local planner -->
-    <include file="$(find state_lattice_planner)/launch/local_planner.launch"/>
+    <include file="$(find state_lattice_planner)/launch/local_planner.launch">
+        <arg name="target_velocity" value="0.5"/>
+    </include>
 
     <!-- task -->
     <include file="$(find stop_line_detector)/launch/stop_line_detector.launch"/>
