@@ -41,7 +41,6 @@
         <remap from="/odom/gnss_ekf" to="/observed_position"/>
     </node>
 
-
     <!-- localmap -->
     <include file="$(find making_local_map)/launch/making_localmap.launch"/>
 
@@ -55,6 +54,8 @@
     <!-- local planner -->
     <include file="$(find state_lattice_planner)/launch/local_planner.launch">
         <arg name="target_velocity" value="0.8"/>
+        <arg name="param_file_name" value="$(find cats)/config/cats_motion_param.yaml"/>
+        <arg name="lookup_table_file_name" value="$(find cats)/config/cats_lookup_table.csv"/>
     </include>
 
     <!-- task -->
