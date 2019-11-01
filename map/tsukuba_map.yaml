@@ -126,23 +126,23 @@ NODE:
   type: intersection,position
 - id: 4
   label: ''
-  point: {x: -102.00264180992963, y: 30.364881639368832}
+  point: {x: -102.00264180992963, y: 31.0}
   type: intersection,position
 - id: 5
   label: ''
-  point: {x: -94.0846943857614, y: 29.735023614484817}
+  point: {x: -95.0, y: 30.0}
   type: intersection,position
 - id: 6
   label: ''
-  point: {x: -77.10886615485651, y: 25.24751683836803}
+  point: {x: -77.10886615485651, y: 24.5}
   type: intersection,position
 - id: 7
   label: ''
-  point: {x: -77.51851591403829, y: 20.03766787564382}
+  point: {x: -77.51851591403829, y: 19.5}
   type: intersection,position
 - id: 8
   label: ''
-  point: {x: -48.53830204572296, y: 18.542293031234294}
+  point: {x: -48.53830204572296, y: 18.0}
   type: intersection,position
 - id: 9
   label: ''
@@ -154,15 +154,15 @@ NODE:
   type: intersection,position
 - id: 11
   label: ''
-  point: {x: -19.608121393306646, y: 21.26285163220018}
+  point: {x: -18.5, y: 21.26285163220018}
   type: intersection,position
 - id: 12
   label: ''
-  point: {x: -18.53351711347932, y: 30.12710224976763}
+  point: {x: -18.0, y: 28.5}
   type: intersection,position
 - id: 13
   label: ''
-  point: {x: 9.088754897762556, y: 27.868288810830563}
+  point: {x: 9.088754897762556, y: 26.0}
   type: intersection,position
 - id: 14
   label: ''
@@ -354,7 +354,7 @@ NODE:
   type: intersection,position
 - id: 61
   label: ''
-  point: {x: -40.86678536783438, y: 29.895327675621957}
+  point: {x: -39.0, y: 29.895327675621957}
   type: intersection,position
 - id: 62
   label: park
@@ -426,6 +426,6 @@ NODE:
   type: intersection,position
 - id: 79
   label: ''
-  point: {x: -92.75796460203128, y: 27.171443366911262}
+  point: {x: -89.0, y: 25.5}
   type: intersection,position
 ORIGIN_UTM: {x: 416913.89696460206, y: 3993535.879556633}
