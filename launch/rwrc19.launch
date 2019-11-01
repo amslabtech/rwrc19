@@ -18,7 +18,7 @@
 
     <!-- sensor -->
     <node pkg="complement" type="complement" name="complement">
-        <param name="dyaw/drift" value="0.0015"/>
+        <param name="dyaw/drift" value="0.00"/>
     </node>
     <include file="$(find perfect_velodyne)/launch/normal_estimation.launch"/>
     <include file="$(find velodyne_height_map)/launch/amsl_velodyne_heightmap.launch">
@@ -41,7 +41,6 @@
         <remap from="/odom/gnss_ekf" to="/observed_position"/>
     </node>
 
-    
     <!-- localmap -->
     <include file="$(find making_local_map)/launch/making_localmap.launch"/>
 
