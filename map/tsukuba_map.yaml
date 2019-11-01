@@ -118,7 +118,7 @@ NODE:
   type: intersection,position
 - id: 2
   label: ''
-  point: {x: -78.18407477717847, y: 6.843244920950383}
+  point: {x: -77.0, y: 6.843244920950383}
   type: intersection,position
 - id: 3
   label: ''
@@ -134,11 +134,11 @@ NODE:
   type: intersection,position
 - id: 6
   label: ''
-  point: {x: -77.10886615485651, y: 24.5}
+  point: {x: -75.5, y: 24.5}
   type: intersection,position
 - id: 7
   label: ''
-  point: {x: -77.51851591403829, y: 19.5}
+  point: {x: -76.0, y: 19.5}
   type: intersection,position
 - id: 8
   label: ''
@@ -350,7 +350,7 @@ NODE:
   type: intersection,position
 - id: 60
   label: ''
-  point: {x: -76.95774047786836, y: 31.68005746230483}
+  point: {x: -75.5, y: 31.68005746230483}
   type: intersection,position
 - id: 61
   label: ''
