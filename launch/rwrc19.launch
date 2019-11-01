@@ -18,7 +18,7 @@
 
     <!-- sensor -->
     <node pkg="complement" type="complement" name="complement">
-        <param name="dyaw/drift" value="0.00"/>
+        <param name="dyaw/drift" value="-0.0012"/>
     </node>
     <include file="$(find perfect_velodyne)/launch/normal_estimation.launch"/>
     <include file="$(find velodyne_height_map)/launch/amsl_velodyne_heightmap.launch">
@@ -53,7 +53,7 @@
 
     <!-- local planner -->
     <include file="$(find state_lattice_planner)/launch/local_planner.launch">
-        <arg name="target_velocity" value="0.5"/>
+        <arg name="target_velocity" value="0.8"/>
         <arg name="param_file_name" value="$(find cats)/config/cats_motion_param.yaml"/>
         <arg name="lookup_table_file_name" value="$(find cats)/config/cats_lookup_table.csv"/>
     </include>
@@ -62,7 +62,7 @@
     <include file="$(find stop_line_detector)/launch/stop_line_detector.launch"/>
 
     <!-- rviz -->
-    <node pkg="rviz" type="rviz" name="global_rviz" args="-d $(find amsl_navigation_managers)/config/node_edge_map.rviz"/>
-    <node pkg="rviz" type="rviz" name="local_rviz" args="-d $(find making_local_map)/config/localmap.rviz"/>
+    <node pkg="rviz" type="rviz" name="global_rviz" args="-d $(env HOME)/rwrc19/config/global.rviz"/>
+    <node pkg="rviz" type="rviz" name="local_rviz" args="-d $(env HOME)/rwrc19/config/local.rviz"/>
 
 </launch>
