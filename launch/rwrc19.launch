@@ -48,12 +48,13 @@
 
     <!-- navigator -->
     <include file="$(find node_edge_navigator)/launch/node_edge_navigator.launch">
-        <arg name="goal_radius" value="2.0"/>
+        <arg name="goal_radius" value="1.0"/>
     </include>
 
     <!-- local planner -->
     <include file="$(find state_lattice_planner)/launch/local_planner.launch">
         <arg name="target_velocity" value="0.8"/>
+        <arg name="control_delay" value="20"/>
         <arg name="param_file_name" value="$(find cats)/config/cats_motion_param.yaml"/>
         <arg name="lookup_table_file_name" value="$(find cats)/config/cats_lookup_table.csv"/>
     </include>
