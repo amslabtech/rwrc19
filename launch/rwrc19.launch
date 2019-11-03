@@ -4,9 +4,10 @@
     <arg name="env" default="tsukuba"/>
     <arg name="gps" default="false"/>
     <arg name="bag" default="false"/>
+    <arg name="robot" default="cats"/>
 
     <param name="use_sim_time" value="true" if="$(arg bag)"/>
-    <include file="$(find cats)/launch/robot_state.launch" if="$(arg bag)"/>
+    <include file="$(eval find(robot) + '/launch/robot_state.launch')" if="$(arg bag)"/>
     <include file="$(find velodyne_pointcloud)/launch/32e_points.launch" if="$(arg bag)"/>
     <node name="republish" pkg="image_transport" type="republish" args="compressed in:=/usb_cam/image_raw raw out:=/usb_cam/image_raw"/>
 
