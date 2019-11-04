@@ -1,0 +1,9 @@
+task:
+    - trigger: "recognition/stop_line"
+      task_type: "stop"
+      edge:
+        node0_id: 12
+        node1_id: 13
+        progress_min: 0.8
+        progress_max: 1.2
+      repeat: False
