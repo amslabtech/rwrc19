@@ -15,7 +15,7 @@
     <include file="$(find amsl_navigation_managers)/launch/amsl_navigation_managers.launch">
         <arg name="map_path" value="$(env HOME)/rwrc19/map/$(arg env)_map.yaml"/>
         <arg name="checkpoint_path" value="$(env HOME)/rwrc19/checkpoint/$(arg env)_checkpoint.yaml"/>
-        <arg name="task_path" value="$(env HOME)/rwrc19/task/$(arg env)_task.yaml"/>
+        <arg name="task_list_path" value="$(env HOME)/rwrc19/task/$(arg env)_task.yaml"/>
     </include>
 
     <!-- sensor -->
