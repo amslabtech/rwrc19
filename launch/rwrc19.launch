@@ -51,6 +51,7 @@
     <!-- navigator -->
     <include file="$(find node_edge_navigator)/launch/node_edge_navigator.launch">
         <arg name="goal_radius" value="1.0"/>
+        <arg name="local_map" value="/local_map/expand"/>
     </include>
 
     <!-- local planner -->
