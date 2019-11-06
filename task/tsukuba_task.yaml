@@ -99,3 +99,19 @@ task:
         progress_min: 0.0
         progress_max: 1.2
       repeat: True
+    - trigger: "enter/edge"
+      task_type: "ignore_intensity"
+      edge:
+        node0_id: 12
+        node1_id: 13
+        progress_min: 0.8
+        progress_max: 0.9
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "use_intensity"
+      edge:
+        node0_id: 13
+        node1_id: 14
+        progress_min: 0.1
+        progress_max: 0.2
+      repeat: False
