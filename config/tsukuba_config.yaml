@@ -9,3 +9,8 @@ localiztion:
         ENABLE_TF: true
         ENABLE_ODOM_TF: true
         USE_OBSERVED_POSITION_AS_ESTIMATED_POSE: true
+recognition:
+    road_recognizer:
+        road_cloud_publisher:
+            INTENSITY_LOWER_THRESHOLD: 20
+
