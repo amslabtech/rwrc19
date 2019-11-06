@@ -115,3 +115,75 @@ task:
         progress_min: 0.1
         progress_max: 0.2
       repeat: False
+    - trigger: "enter/edge"
+      task_type: "ignore_intensity"
+      edge:
+        node0_id: 14
+        node1_id: 15
+        progress_min: 0.9
+        progress_max: 1.0
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "use_intensity"
+      edge:
+        node0_id: 16
+        node1_id: 64
+        progress_min: 0.0
+        progress_max: 0.1
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "ignore_intensity"
+      edge:
+        node0_id: 67
+        node1_id: 68
+        progress_min: 0.9
+        progress_max: 1.0
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "use_intensity"
+      edge:
+        node0_id: 68
+        node1_id: 69
+        progress_min: 0.9
+        progress_max: 1.0
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "ignore_intensity"
+      edge:
+        node0_id: 77
+        node1_id: 69
+        progress_min: 0.7
+        progress_max: 0.8
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "ignore_intensity"
+      edge:
+        node0_id: 55
+        node1_id: 69
+        progress_min: 0.7
+        progress_max: 0.8
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "use_intensity"
+      edge:
+        node0_id: 69
+        node1_id: 68
+        progress_min: 0.9
+        progress_max: 1.0
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "ignore_intensity"
+      edge:
+        node0_id: 70
+        node1_id: 16
+        progress_min: 0.2
+        progress_max: 0.3
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "use_intensity"
+      edge:
+        node0_id: 16
+        node1_id: 15
+        progress_min: 0.9
+        progress_max: 1.0
+      repeat: False
