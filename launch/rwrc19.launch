@@ -9,7 +9,8 @@
     <param name="use_sim_time" value="true" if="$(arg bag)"/>
     <include file="$(eval find(robot) + '/launch/robot_state.launch')" if="$(arg bag)"/>
     <include file="$(find velodyne_pointcloud)/launch/32e_points.launch" if="$(arg bag)"/>
-    <node name="republish" pkg="image_transport" type="republish" args="compressed in:=/usb_cam/image_raw raw out:=/usb_cam/image_raw"/>
+    <node name="republish" pkg="image_transport" type="republish" args="compressed in:=/usb_cam/image_raw raw out:=/usb_cam/image_raw" if="$(arg bag)"/>
+    <node name="republish_realsense" pkg="image_transport" type="republish" args="compressed in:=/camera/color/image_raw raw out:=/camera/color/image_raw" if="$(arg bag)"/>
 
     <!-- node edge map -->
     <include file="$(find amsl_navigation_managers)/launch/amsl_navigation_managers.launch">
