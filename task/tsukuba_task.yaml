@@ -7,6 +7,7 @@ task:
         progress_min: 0.7
         progress_max: 1.2
       repeat: False
+      after_t: False
     - trigger: "recognition/stop_line"
       task_type: "stop"
       edge:
@@ -15,6 +16,7 @@ task:
         progress_min: 0.0
         progress_max: 1.2
       repeat: True
+      after_t: False
     - trigger: "recognition/stop_line"
       task_type: "stop"
       edge:
@@ -23,6 +25,7 @@ task:
         progress_min: 0.8
         progress_max: 1.2
       repeat: True
+      after_t: True
     - trigger: "recognition/stop_line/T"
       task_type: "stop"
       edge:
@@ -42,6 +45,7 @@ task:
         progress_min: 0.0
         progress_max: 0.1
       repeat: True
+      after_t: True
     - trigger: "recognition/stop_line"
       task_type: "stop"
       edge:
@@ -50,6 +54,7 @@ task:
         progress_min: 0.8
         progress_max: 1.2
       repeat: True
+      after_t: True
     - trigger: "recognition/stop_line/T"
       task_type: "stop"
       edge:
@@ -69,6 +74,7 @@ task:
         progress_min: 0.0
         progress_max: 0.1
       repeat: True
+      after_t: True
     - trigger: "recognition/stop_line"
       task_type: "stop"
       edge:
@@ -77,6 +83,7 @@ task:
         progress_min: 0.8
         progress_max: 1.2
       repeat: True
+      after_t: True
     - trigger: "recognition/stop_line/T"
       task_type: "stop"
       edge:
@@ -96,6 +103,7 @@ task:
         progress_min: 0.0
         progress_max: 0.1
       repeat: True
+      after_t: True
     - trigger: "recognition/stop_line"
       task_type: "stop"
       edge:
@@ -104,6 +112,7 @@ task:
         progress_min: 0.0
         progress_max: 1.2
       repeat: True
+      after_t: True
     - trigger: "recognition/stop_line/T"
       task_type: "stop"
       edge:
@@ -123,6 +132,7 @@ task:
         progress_min: 0.0
         progress_max: 0.1
       repeat: True
+      after_t: True
     - trigger: "recognition/stop_line"
       task_type: "stop"
       edge:
@@ -131,6 +141,7 @@ task:
         progress_min: 0.0
         progress_max: 1.2
       repeat: True
+      after_t: False
     - trigger: "enter/edge"
       task_type: "ignore_intensity"
       edge:
