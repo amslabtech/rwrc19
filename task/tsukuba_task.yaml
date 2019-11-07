@@ -136,8 +136,8 @@ task:
       edge:
         node0_id: 12
         node1_id: 13
-        progress_min: 0.8
-        progress_max: 0.9
+        progress_min: 0.7
+        progress_max: 1.0
       repeat: False
     - trigger: "enter/edge"
       task_type: "use_intensity"
@@ -145,14 +145,14 @@ task:
         node0_id: 13
         node1_id: 14
         progress_min: 0.1
-        progress_max: 0.2
+        progress_max: 1.0
       repeat: False
     - trigger: "enter/edge"
       task_type: "ignore_intensity"
       edge:
         node0_id: 14
         node1_id: 15
-        progress_min: 0.9
+        progress_min: 0.7
         progress_max: 1.0
       repeat: False
     - trigger: "enter/edge"
@@ -161,22 +161,38 @@ task:
         node0_id: 16
         node1_id: 64
         progress_min: 0.0
-        progress_max: 0.1
+        progress_max: 1.0
       repeat: False
     - trigger: "enter/edge"
       task_type: "ignore_intensity"
       edge:
-        node0_id: 67
+        node0_id: 78
         node1_id: 68
-        progress_min: 0.9
+        progress_min: 0.7
         progress_max: 1.0
       repeat: False
     - trigger: "enter/edge"
       task_type: "use_intensity"
       edge:
-        node0_id: 68
-        node1_id: 69
-        progress_min: 0.9
+        node0_id: 69
+        node1_id: 77
+        progress_min: 0.0
+        progress_max: 1.0
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "use_intensity"
+      edge:
+        node0_id: 69
+        node1_id: 55
+        progress_min: 0.0
+        progress_max: 1.0
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "use_intensity"
+      edge:
+        node0_id: 69
+        node1_id: 17
+        progress_min: 0.0
         progress_max: 1.0
       repeat: False
     - trigger: "enter/edge"
@@ -185,7 +201,7 @@ task:
         node0_id: 77
         node1_id: 69
         progress_min: 0.7
-        progress_max: 0.8
+        progress_max: 1.0
       repeat: False
     - trigger: "enter/edge"
       task_type: "ignore_intensity"
@@ -193,14 +209,22 @@ task:
         node0_id: 55
         node1_id: 69
         progress_min: 0.7
-        progress_max: 0.8
+        progress_max: 1.0
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "ignore_intensity"
+      edge:
+        node0_id: 17
+        node1_id: 69
+        progress_min: 0.7
+        progress_max: 1.0
       repeat: False
     - trigger: "enter/edge"
       task_type: "use_intensity"
       edge:
-        node0_id: 69
-        node1_id: 68
-        progress_min: 0.9
+        node0_id: 68
+        node1_id: 70
+        progress_min: 0.0
         progress_max: 1.0
       repeat: False
     - trigger: "enter/edge"
@@ -208,14 +232,14 @@ task:
       edge:
         node0_id: 70
         node1_id: 16
-        progress_min: 0.2
-        progress_max: 0.3
+        progress_min: 0.0
+        progress_max: 1.0
       repeat: False
     - trigger: "enter/edge"
       task_type: "use_intensity"
       edge:
-        node0_id: 16
-        node1_id: 15
-        progress_min: 0.9
+        node0_id: 15
+        node1_id: 14
+        progress_min: 0.0
         progress_max: 1.0
       repeat: False
