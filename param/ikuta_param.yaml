@@ -11,4 +11,6 @@ recognition:
     road_recognizer:
         road_cloud_publisher:
             INTENSITY_LOWER_THRESHOLD: 20
-
+local_planner:
+    state_lattice_planner:
+        TARGET_VELOCITY: 0.8

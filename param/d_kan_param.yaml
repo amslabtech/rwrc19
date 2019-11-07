@@ -1,11 +1,9 @@
 localiztion:
     node_edge_localizer:
-        INIT_X: -15.0
-        INIT_Y: 0.0
         INIT_YAW: 3.14
         INIT_NODE0_ID: 0
         INIT_NODE1_ID: 1
-        INIT_PROGRESS: 0.9
+        INIT_PROGRESS: 0
         ENABLE_TF: true
         ENABLE_ODOM_TF: true
         USE_OBSERVED_POSITION_AS_ESTIMATED_POSE: true
@@ -13,4 +11,6 @@ recognition:
     road_recognizer:
         road_cloud_publisher:
             INTENSITY_LOWER_THRESHOLD: 20
-
+local_planner:
+    state_lattice_planner:
+        TARGET_VELOCITY: 0.8
