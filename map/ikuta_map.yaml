@@ -51,7 +51,7 @@ NODE:
 - id: 0
   label: ''
   point: {x: 0.0, y: 0.0}
-  type: intersection
+  type: intersection,position
 - id: 1
   label: ''
   point: {x: -0.995471, y: -18.6942}

@@ -6,11 +6,11 @@ localiztion:
         INIT_PROGRESS: 0
         ENABLE_TF: true
         ENABLE_ODOM_TF: true
-        USE_OBSERVED_POSITION_AS_ESTIMATED_POSE: true
+        USE_OBSERVED_POSITION_AS_ESTIMATED_POSE: false
 recognition:
     road_recognizer:
         road_cloud_publisher:
-            INTENSITY_LOWER_THRESHOLD: 20
+            INTENSITY_LOWER_THRESHOLD: 25
 local_planner:
     state_lattice_planner:
         TARGET_VELOCITY: 0.8
