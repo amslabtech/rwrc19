@@ -35,7 +35,7 @@ task:
         progress_max: 1.2
       repeat: False
       local_goal:
-          x: 2.0
+          x: 3.0
           y: 0.5
     - trigger: "recognition/stop_line"
       task_type: "stop"
