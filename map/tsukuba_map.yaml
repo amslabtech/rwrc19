@@ -162,7 +162,8 @@ NODE:
   type: intersection,position
 - id: 13
   label: ''
-  point: {x: 9.088754897762556, y: 26.0}
+  point: {x: 12.0, y: 25.5}
+  # point: {x: 9.088754897762556, y: 26.0}
   type: intersection,position
 - id: 14
   label: ''
