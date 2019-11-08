@@ -230,3 +230,51 @@ task:
         progress_min: 0.9
         progress_max: 1.0
       repeat: False
+    - trigger: "enter/edge"
+      task_type: "grassy_area"
+      edge:
+        node0_id: 6
+        node1_id: 79
+        progress_min: 0.0
+        progress_max: 1.0
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "grassy_area"
+      edge:
+        node0_id: 7
+        node1_id: 6
+        progress_min: 0.0
+        progress_max: 2.0
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "not_grassy_area"
+      edge:
+        node0_id: 4 
+        node1_id: 3
+        progress_min: 0.0
+        progress_max: 1.0
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "grassy_area"
+      edge:
+        node0_id: 8
+        node1_id: 9
+        progress_min: 0.0
+        progress_max: 1.0
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "not_grassy_area"
+      edge:
+        node0_id: 9
+        node1_id: 10
+        progress_min: 0.6
+        progress_max: 2.0
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "not_grassy_area"
+      edge:
+        node0_id: 10
+        node1_id: 11
+        progress_min: 0.0
+        progress_max: 1.0
+      repeat: False
