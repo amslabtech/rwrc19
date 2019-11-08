@@ -2,9 +2,9 @@
 <launch>
 
     <arg name="env" default="tsukuba"/>
-    <arg name="gps" default="false"/>
+    <arg name="gps" default="true"/>
     <arg name="bag" default="false"/>
-    <arg name="robot" default="cats"/>
+    <arg name="robot" default="infant"/>
 
     <param name="use_sim_time" value="true" if="$(arg bag)"/>
     <include file="$(eval find(robot) + '/launch/robot_state.launch')" if="$(arg bag)"/>
@@ -37,9 +37,6 @@
         <arg name="enable_tentative_correction" value="true"/>
     </include>
     <node pkg="odom_gnss_ekf" type="odom_gnss_ekf" name="odom_gnss_ekf" if="$(arg gps)">
-        <param name="INIT_X" value="-18.7192398099578"/>
-        <param name="INIT_Y" value="1.065049359574914"/>
-        <param name="INIT_YAW" value="3.14"/>
         <remap from="/odom/gnss_ekf" to="/observed_position"/>
     </node>
 
@@ -50,14 +47,11 @@
 
     <!-- navigator -->
     <include file="$(find node_edge_navigator)/launch/node_edge_navigator.launch">
-        <arg name="goal_radius" value="1.0"/>
         <arg name="local_map" value="/local_map/expand"/>
     </include>
 
     <!-- local planner -->
     <include file="$(find state_lattice_planner)/launch/local_planner.launch">
-        <arg name="target_velocity" value="0.8"/>
-        <arg name="control_delay" value="20"/>
         <arg name="param_file_name" value="$(find cats)/config/cats_motion_param.yaml"/>
         <arg name="lookup_table_file_name" value="$(find cats)/config/cats_lookup_table.csv"/>
     </include>

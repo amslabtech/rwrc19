@@ -12,7 +12,26 @@ localiztion:
 recognition:
     road_recognizer:
         road_cloud_publisher:
-            INTENSITY_LOWER_THRESHOLD: 20
+            INTENSITY_LOWER_THRESHOLD: 28
+        road_recognizer:
+            RANDOM_SAMPLE_RATIO: 0.7
+    stop_line_detector:
+        H_MAX: 180
+        S_MAX: 140
+        V_MIN: 170
+        MAX_DISTANCE_LIMIT: 15.0
+        MIN_DISTANCE_LIMIT: 12.0
+        SHOW_IMAGE: false
 local_planner:
     state_lattice_planner:
-        TARGET_VELOCITY: 0.8
+        CONTROL_DELAY: 20
+        TARGET_VELOCITY: 0.6
+making_localmap:
+    occupancygrid_integrate:
+        EXPAND_RANGE: 0.4
+node_edge_navigator:
+    GOAL_RADIUS: 1.0
+odom_gnss_ekf:
+    INIT_X: -18.71923981
+    INIT_Y: 1.06504935957
+    INIT_YAW: 3.14
