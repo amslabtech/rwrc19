@@ -26,6 +26,13 @@ task:
         progress_max: 1.2
       repeat: True
       after_t: True
+    - trigger: "recognition/stop_line/line_trace"
+      task_type: "trace"
+      edge:
+        node0_id: 14
+        node1_id: 15
+        progress_min: 0.7
+        progress_max: 1.2
     - trigger: "recognition/stop_line/T"
       task_type: "stop"
       edge:
@@ -142,6 +149,22 @@ task:
         progress_max: 1.2
       repeat: True
       after_t: False
+    - trigger: "enter/edge"
+      task_type: "ignore_intensity"
+      edge:
+        node0_id: 60
+        node1_id: 80
+        progress_min: 0.0
+        progress_max: 1.0
+      repeat: False
+    - trigger: "enter/edge"
+      task_type: "use_intensity"
+      edge:
+        node0_id: 81
+        node1_id: 12
+        progress_min: 0.0
+        progress_max: 1.0
+      repeat: False
     - trigger: "enter/edge"
       task_type: "ignore_intensity"
       edge:
@@ -273,7 +296,7 @@ task:
     - trigger: "enter/edge"
       task_type: "not_grassy_area"
       edge:
-        node0_id: 4 
+        node0_id: 4
         node1_id: 3
         progress_min: 0.0
         progress_max: 1.0
