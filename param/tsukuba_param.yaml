@@ -1,7 +1,5 @@
 localiztion:
     node_edge_localizer:
-        INIT_X: -15.0
-        INIT_Y: 0.0
         INIT_YAW: 3.14
         INIT_NODE0_ID: 0
         INIT_NODE1_ID: 1
@@ -9,12 +7,21 @@ localiztion:
         ENABLE_TF: true
         ENABLE_ODOM_TF: true
         USE_OBSERVED_POSITION_AS_ESTIMATED_POSE: true
+        ######
+        # INIT_YAW: 1.57
+        # INIT_NODE0_ID: 6
+        # INIT_NODE1_ID: 60
+        # INIT_PROGRESS: 0.9
+        # ENABLE_TF: true
+        # ENABLE_ODOM_TF: true
+        # USE_OBSERVED_POSITION_AS_ESTIMATED_POSE: true
+        ######
 recognition:
     road_recognizer:
         road_cloud_publisher:
-            INTENSITY_LOWER_THRESHOLD: 28
+            INTENSITY_LOWER_THRESHOLD: 27
         road_recognizer:
-            RANDOM_SAMPLE_RATIO: 0.7
+            RANDOM_SAMPLE_RATIO: 0.9
     stop_line_detector:
         H_MAX: 180
         S_MAX: 140
@@ -25,7 +32,7 @@ recognition:
 local_planner:
     state_lattice_planner:
         CONTROL_DELAY: 20
-        TARGET_VELOCITY: 0.6
+        TARGET_VELOCITY: 0.8
 making_localmap:
     occupancygrid_integrate:
         EXPAND_RANGE: 0.4
@@ -35,3 +42,8 @@ odom_gnss_ekf:
     INIT_X: -18.71923981
     INIT_Y: 1.06504935957
     INIT_YAW: 3.14
+    ####
+    # INIT_X: -75.0
+    # INIT_Y: 31.0
+    # INIT_YAW: 1.57
+    ####
