@@ -43,7 +43,7 @@ task:
       repeat: False
       local_goal:
           x: 3.0
-          y: 0.5
+          y: -0.2
     - trigger: "recognition/stop_line"
       task_type: "stop"
       edge:
@@ -72,7 +72,7 @@ task:
       repeat: False
       local_goal:
           x: 3.0
-          y: 0.5
+          y: -0.2
     - trigger: "recognition/stop_line"
       task_type: "stop"
       edge:
@@ -153,14 +153,14 @@ task:
       task_type: "ignore_intensity"
       edge:
         node0_id: 60
-        node1_id: 80
+        node1_id: 81
         progress_min: 0.0
         progress_max: 1.0
       repeat: False
     - trigger: "enter/edge"
       task_type: "use_intensity"
       edge:
-        node0_id: 81
+        node0_id: 80
         node1_id: 12
         progress_min: 0.0
         progress_max: 1.0
@@ -176,10 +176,10 @@ task:
     - trigger: "enter/edge"
       task_type: "use_intensity"
       edge:
-        node0_id: 13
-        node1_id: 14
-        progress_min: 0.1
-        progress_max: 1.0
+        node0_id: 14
+        node1_id: 15
+        progress_min: 0.0
+        progress_max: 0.5
       repeat: False
     - trigger: "enter/edge"
       task_type: "ignore_intensity"
