@@ -54,10 +54,20 @@ repositories:
         label: ros-pkg
         url: https://github.com/amslabtech/stop_line_detector.git
         version: master
+    amslabtech/road_closed_sign_detector:
+        type: git
+        label: ros-pkg
+        url: https://github.com/amslabtech/road_closed_sign_detector.git
+        version: master
     amslabtech/CATS:
         type: git
         label: ros-pkg
         url: https://github.com/amslabtech/CATS.git
+        version: master
+    amslabtech/infant:
+        type: git
+        label: ros-pkg
+        url: https://github.com/amslabtech/infant.git
         version: master
     amslabtech/odom_gnss_ekf:
         type: git
