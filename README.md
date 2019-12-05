@@ -8,7 +8,11 @@
 - ROS Kinetic or Melodic
 
 ## Dependencies
-### please git clone from [amsl repository](https:://github.com/amslabtech)
+
+```
+$ cd scripts
+$ ./update_repositories.py
+```
 
 |pakage | build status |
 |:--- |:---|
@@ -18,12 +22,18 @@
 |[dijkstra_global_planner](https://github.com/amslabtech/dijkstra_global_planner) |[![Build Status](https://travis-ci.org/amslabtech/dijkstra_global_planner.svg?branch=master)](https://travis-ci.org/amslabtech/node_edge_localizer) |
 |[state_lattice_planner](https://github.com/amslabtech/state_lattice_planner) |[![Build Status](https://travis-ci.org/amslabtech/state_lattice_planner.svg?branch=master)](https://travis-ci.org/amslabtech/state_lattice_planner) |
 |[making_localmap](https://github.com/amslabtech/making_localmap) |[![Build Status](https://travis-ci.org/amslabtech/making_localmap.svg?branch=master)](https://travis-ci.org/amslabtech/maiking_localmap) |
-|[intersection_recognition](https://github.com/amslabtech/intersection_recognition) |[![Build Status](https://travis-ci.org/amslabtech/intersection_recognition.svg?branch=master)](https://travis-ci.org/amslabtech/intersection_recognition) |
+|[road_recognizer](https://github.com/amslabtech/road_recognizer) |[![Build Status](https://travis-ci.org/amslabtech/road_recognizer.svg?branch=master)](https://travis-ci.org/amslabtech/road_recognizer) |
 |[motion_decision](https://github.com/amslabtech/motion_decision) |[![Build Status](https://travis-ci.org/amslabtech/motion_decision.svg?branch=master)](https://travis-ci.org/amslabtech/motion_decision)|
-
-- [realsense_docker](https://github.com/amslabtech/realsense_docker)
-- [velodyne_height_map](https://github.com/amslabtech/velodyne_height_map)
-- [perfect_velodyne](https://github.com/amslabtech/perfect_velodyne)
+|[complement](https://github.com/amslabtech/complement) |[![Build Status](https://travis-ci.org/amslabtech/complement.svg?branch=master)](https://travis-ci.org/amslabtech/complement)|
+|[dynamic_cloud_detector](https://github.com/amslabtech/dynamic_cloud_detector) |[![Build Status](https://travis-ci.org/amslabtech/dynamic_cloud_detector.svg?branch=master)](https://travis-ci.org/amslabtech/dynamic_cloud_detector)|
+|[velodyne_height_map](https://github.com/amslabtech/velodyne_height_map) |[![Build Status](https://travis-ci.org/amslabtech/velodyne_height_map.svg?branch=master)](https://travis-ci.org/amslabtech/velodyne_height_map)|
+|[odom_gnss_ekf](https://github.com/amslabtech/odom_gnss_ekf) |[![Build Status](https://travis-ci.org/amslabtech/odom_gnss_ekf.svg?branch=master)](https://travis-ci.org/amslabtech/odom_gnss_ekf)|
+|[stop_line_detector](https://github.com/amslabtech/stop_line_detector) |[![Build Status](https://travis-ci.org/amslabtech/stop_line_detector.svg?branch=master)](https://travis-ci.org/amslabtech/stop_line_detector)|
+|[road_closed_sign_detector](https://github.com/amslabtech/road_closed_sign_detector) |[![Build Status](https://travis-ci.org/amslabtech/road_closed_sign_detector.svg?branch=master)](https://travis-ci.org/amslabtech/road_closed_sign_detector)|
+|[perfect_velodyne](https://github.com/amslabtech/perfect_velodyne) |[![Build Status](https://travis-ci.org/amslabtech/perfect_velodyne.svg?branch=master)](https://travis-ci.org/amslabtech/perfect_velodyne)|
+|[gps_docker](https://github.com/amslabtech/gps_docker) |[![Build Status](https://travis-ci.org/amslabtech/gps_docker.svg?branch=master)](https://travis-ci.org/amslabtech/gps_docker)|
+|[realsense_docker](https://github.com/amslabtech/realsense_docker) |[![Build Status](https://travis-ci.org/amslabtech/realsense_docker.svg?branch=master)](https://travis-ci.org/amslabtech/realsense_docker)|
+|[mpdrl_ros](https://github.com/amslabtech/mpdrl_ros) |[![Build Status](https://travis-ci.org/amslabtech/mpdrl_ros.svg?branch=master)](https://travis-ci.org/amslabtech/mpdrl_ros)|
 
 ### please install ros sensor package
 ```
@@ -31,19 +41,6 @@ $ sudo apt-get install ros-<distro>-velodyne
 $ sudo apt-get install ros-<distro>-xsens-driver
 $ sudo apt-get install ros-<distro>-urg-node
 $ sudo apt-get install ros-<distro>-velodyne-description
-```
-
-## How to use
-### with bag data
-topics of bag data
-- /velodyne_packets 
-- /imu/data
-- /odom
-
-```
-$ cd scripts
-$ ./playing_bag.sh
-$ rosbag play --clock <test>.bag
 ```
 
 ## System
