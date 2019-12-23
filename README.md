@@ -21,7 +21,7 @@ $ ./update_repositories.py
 |[node_edge_localizer](https://github.com/amslabtech/node_edge_localizer) |[![Build Status](https://travis-ci.org/amslabtech/node_edge_localizer.svg?branch=master)](https://travis-ci.org/amslabtech/node_edge_localizer) |
 |[dijkstra_global_planner](https://github.com/amslabtech/dijkstra_global_planner) |[![Build Status](https://travis-ci.org/amslabtech/dijkstra_global_planner.svg?branch=master)](https://travis-ci.org/amslabtech/node_edge_localizer) |
 |[state_lattice_planner](https://github.com/amslabtech/state_lattice_planner) |[![Build Status](https://travis-ci.org/amslabtech/state_lattice_planner.svg?branch=master)](https://travis-ci.org/amslabtech/state_lattice_planner) |
-|[localmap_ceater](https://github.com/amslabtech/localmap_ceater) |[![Build Status](https://travis-ci.org/amslabtech/localmap_ceater.svg?branch=master)](https://travis-ci.org/amslabtech/maiking_localmap) |
+|[localmap_ceater](https://github.com/amslabtech/localmap_ceater) |[![Build Status](https://travis-ci.org/amslabtech/localmap_ceater.svg?branch=master)](https://travis-ci.org/amslabtech/localmap_creater) |
 |[road_recognizer](https://github.com/amslabtech/road_recognizer) |[![Build Status](https://travis-ci.org/amslabtech/road_recognizer.svg?branch=master)](https://travis-ci.org/amslabtech/road_recognizer) |
 |[motion_decision](https://github.com/amslabtech/motion_decision) |[![Build Status](https://travis-ci.org/amslabtech/motion_decision.svg?branch=master)](https://travis-ci.org/amslabtech/motion_decision)|
 |[complement](https://github.com/amslabtech/complement) |[![Build Status](https://travis-ci.org/amslabtech/complement.svg?branch=master)](https://travis-ci.org/amslabtech/complement)|
