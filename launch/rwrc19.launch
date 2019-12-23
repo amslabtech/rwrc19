@@ -41,7 +41,7 @@
     </node>
 
     <!-- localmap -->
-    <include file="$(find making_local_map)/launch/making_localmap.launch"/>
+    <include file="$(find localmap_creater)/launch/localmap_creater.launch"/>
 
     <include file="$(find road_recognizer)/launch/road_recognizer.launch"/>
 

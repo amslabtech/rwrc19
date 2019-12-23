@@ -61,7 +61,7 @@ gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch dijkstra_global_planner glob
 gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch node_edge_localizer node_edge_localizer.launch --screen init_node0_id:=${init_node0} init_node1_id:=${init_node1} init_yaw:=${init_yaw} enable_tf:=true enable_odom_tf:=true" --geometry=50x12+1000+250 &
 
 ## localmap
-gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch making_local_map making_localmap.launch" --geometry=50x12+1000+500 &
+gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch localmap_creater localmap_creater.launch" --geometry=50x12+1000+500 &
 
 ## intersection recognition
 gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch intersection_recognition intersection_recognition.launch" --geometry=50x12+1000+500 &
@@ -75,4 +75,4 @@ gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch state_lattice_planner local_
 
 ####rviz####
 gnome-terminal -e "/opt/ros/${distro}/bin/rosrun rviz rviz -d ${ros_ws}/src/amsl_navigation_managers/amsl_navigation_managers/config/node_edge_map.rviz" --geometry=50x12+1500+500
-gnome-terminal -e "/opt/ros/${distro}/bin/rosrun rviz rviz -d ${ros_ws}/src/making_localmap/config/localmap.rviz" --geometry=50x12+1500+500
+gnome-terminal -e "/opt/ros/${distro}/bin/rosrun rviz rviz -d ${ros_ws}/src/localmap_creater/config/localmap.rviz" --geometry=50x12+1500+500

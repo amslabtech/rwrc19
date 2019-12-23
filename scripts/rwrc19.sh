@@ -61,7 +61,7 @@ gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch node_edge_localizer node_edg
 sleep 1s
 
 ## localmap maker
-gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch making_local_map making_localmap.launch --screen" --geometry=50x12+1000+500 &
+gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch localmap_creater localmap_creater.launch --screen" --geometry=50x12+1000+500 &
 sleep 1s
 
 ## navigator
@@ -74,4 +74,4 @@ gnome-terminal -e "/opt/ros/${distro}/bin/roslaunch motion_decision motion_decis
 
 ####rviz####
 gnome-terminal -e "/opt/ros/${distro}/bin/rosrun rviz rviz -d ${ros_ws}/src/amsl_navigation_managers/amsl_navigation_managers/config/node_edge_map.rviz" --geometry=50x12+1500+500
-gnome-terminal -e "/opt/ros/${distro}/bin/rosrun rviz rviz -d ${ros_ws}/src/making_localmap/config/localmap.rviz" --geometry=50x12+1500+500
+gnome-terminal -e "/opt/ros/${distro}/bin/rosrun rviz rviz -d ${ros_ws}/src/localmap_creater/config/localmap.rviz" --geometry=50x12+1500+500

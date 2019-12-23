@@ -43,7 +43,7 @@
     <!-- </node> -->
 
     <!-- localmap -->
-    <include file="$(find making_local_map)/launch/making_localmap.launch"/>
+    <include file="$(find localmap_creater)/launch/localmap_creater.launch"/>
 
     <!-- navigator -->
     <include file="$(find node_edge_navigator)/launch/node_edge_navigator.launch"/>
@@ -53,5 +53,5 @@
 
     <!-- ####rviz#### -->
     <node pkg="rviz" type="rviz" name="global_rviz" args="-d $(find amsl_navigation_managers)/config/node_edge_map.rviz"/>
-    <node pkg="rviz" type="rviz" name="local_rviz" args="-d $(find making_local_map)/config/localmap.rviz"/>
+    <node pkg="rviz" type="rviz" name="local_rviz" args="-d $(find localmap_creater)/config/localmap.rviz"/>
 </launch>

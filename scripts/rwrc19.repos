@@ -4,10 +4,10 @@ repositories:
         label: ros-pkg
         url: https://github.com/amslabtech/amsl_navigation_managers.git
         version: master
-    amslabtech/making_localmap:
+    amslabtech/localmap_creater:
         type: git
         label: ros-pkg
-        url: https://github.com/amslabtech/making_localmap.git
+        url: https://github.com/amslabtech/localmap_creater.git
         version: master
     amslabtech/state_lattice_planner:
         type: git
